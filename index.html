@@ -3,21 +3,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Jason Patterson</title>
 <meta name="google-site-verification" content="wgf2EZL_8jrvZ6B-M-S9J5jW7SQOxUtvmslqlPAFe9E" />    
 <style type="text/css" media="screen">
-body {margin:0px;padding:0px;font-family:Helvetica, Arial, Tahoma;font-size:12px; position:relative;}
-#container {width:730px; margin:50px 0 0 120px; height:490px;}
-#logo {margin:40px 0px 10px; text-align:center;}
-#content {clear:both; margin-top:4px;}
-.slideshow {text-align:center;}
-#home-links {margin:34px 0px 0px 0px; text-align:center; width:808px;}
-#home-links ul {margin: 0px; padding: 0px;}
-#home-links li {margin: 0px; padding: 0px; float:left; list-style-type:none; width:160px; }
-#home-links a {color:#333; text-decoration:none; text-transform:uppercase; font-size:16px;}
-#home-links a:hover {color:#ec0000;}
-
-img {border:none;}
-#footer {color:#999; font-size:11px; margin:0px 0px 10px 0px; clear:both; text-align:center; padding-top:50px;}
+body {margin:0px;padding:0px;font-family:Helvetica, Arial, Tahoma;font-size:12px;}
+#container {width:1000px; margin:0 auto; position:relative;}
 </style>
 <script type="text/javascript">
+var randomnumber=Math.floor(Math.random()*995)
+if (randomnumber%2 == 0) {
+    randomimage = "images/cover1.jpg";
+} else {
+    randomimage = "images/cover2.jpg";
+}
+
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-21352622-1']);
 _gaq.push(['_trackPageview']);
@@ -33,7 +29,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <body>
 <div id="container">
   <div id="content">
-     <a href="main.html"><img src="images/home.jpg" alt="Jason Patterson"></a>
+     <a href="main.html" id="imagelink"><script>document.write ("<img src="+randomimage+" />");</script></a>
   </div>
 </div>
 </body>
