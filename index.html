@@ -5,14 +5,17 @@
 <style type="text/css" media="screen">
 body {margin:0px;padding:0px;font-family:Helvetica, Arial, Tahoma;font-size:12px;}
 #container {width:1000px; margin:0 auto; position:relative;}
+#container a {position:absolute; top:0; left:0; color:white; font-size:1px; }
+#facebook {margin-left:726px; margin-top:548px; width:100px; height:20px;}
+#flickr {margin-left:726px; margin-top:572px; width:100px; height:20px;}
 </style>
 <script type="text/javascript">
-var randomnumber=Math.floor(Math.random()*995)
-if (randomnumber%2 == 0) {
-    randomimage = "images/cover1.jpg";
-} else {
-    randomimage = "images/cover2.jpg";
-}
+var images = [], 
+index = 0;
+images[0] = "<img src='images/001.jpg' alt=''>";
+images[1] = "<img src='images/002.jpg' alt=''>";
+images[2] = "<img src='images/003.jpg' alt=''>";
+index = Math.floor(Math.random() * images.length);
 
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-21352622-1']);
@@ -29,7 +32,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <body>
 <div id="container">
   <div id="content">
-     <a href="main.html" id="imagelink"><script>document.write ("<img src="+randomimage+" />");</script></a>
+    <script>document.write(images[index]);</script>
+    <a id="flickr" target="_blank" href="http://www.flickr.com/photos/jasonpatterson/">&nbsp;</a>
+    <a id="facebook" target="_blank" href="http://www.facebook.com/jasonpattersonartist">&nbsp;</a>
   </div>
 </div>
 </body>
