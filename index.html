@@ -1,16 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Jason Patterson</title>
-<meta name="google-site-verification" content="wgf2EZL_8jrvZ6B-M-S9J5jW7SQOxUtvmslqlPAFe9E" />    
-<style type="text/css" media="screen">
-body {margin:0px;padding:0px;font-family:Helvetica, Arial, Tahoma;font-size:12px;}
-#container {width:1000px; margin:0 auto; position:relative;}
-#container a {position:absolute; top:0; left:0; color:white; font-size:1px; }
-#facebook {margin-left:726px; margin-top:548px; width:100px; height:20px;}
-#flickr {margin-left:726px; margin-top:572px; width:100px; height:20px;}
-</style>
+<meta name="google-site-verification" content="wgf2EZL_8jrvZ6B-M-S9J5jW7SQOxUtvmslqlPAFe9E" />
 <script type="text/javascript">
-var images = [], 
+var images = [],
 index = 0;
 images[0] = "<img src='images/001.jpg' alt=''>";
 images[1] = "<img src='images/002.jpg' alt=''>";
@@ -26,15 +19,34 @@ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www')
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 </script>
+<style type="text/css" media="screen">
+body {margin:0px;padding:0px;font-family:Helvetica, Arial, Tahoma;font-size:12px;}
+#container {width:960px; margin:50px auto 0; position:relative;}
+#container a {position:absolute; top:0; left:0; color:white; font-size:1px;}
+#image {float: right}
+#text {padding-top:200px; margin-left:40px;}
+#text a {width:26px; height:30px; margin-top:312px;}
+#text #facebook {margin-left:40px;}
+#text #twitter {margin-left:70px;}
+#text #instagram {margin-left:103px;}
+#text #flickr {margin-left:136px;}
+#text #email {margin-left:40px; margin-top:230px; height:20px; width:240px;}
+</style>
 </head>
 
 <body>
 <div id="container">
-  <div id="content">
-    <script>document.write(images[index]);</script>
-    <a id="flickr" target="_blank" href="http://www.flickr.com/photos/jasonpatterson/">&nbsp;</a>
-    <a id="facebook" target="_blank" href="http://www.facebook.com/jasonpattersonartist">&nbsp;</a>
-  </div>
+    <div id="image">
+        <script>document.write(images[index]);</script>
+    </div>
+    <div id="text">
+        <img src="images/text.png" />
+        <a id="facebook" href="https://www.facebook.com/jasonpattersonartist" target="_blank">&nbsp;</a>
+        <a id="twitter" href="https://twitter.com/jason_patterson" target="_blank">&nbsp;</a>
+        <a id="instagram" href="http://instagram.com/jason_patterson" target="_blank">&nbsp;</a>
+        <a id="flickr" href="http://www.flickr.com/photos/jasonpatterson/" target="_blank">&nbsp;</a>
+        <a id="email" href="mailto:info@jasonpattersonart.com">&nbsp;</a>
+    </div>
 </div>
 </body>
 </html>
