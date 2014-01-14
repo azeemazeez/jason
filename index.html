@@ -12,7 +12,6 @@ index = Math.floor(Math.random() * images.length);
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-21352622-1']);
 _gaq.push(['_trackPageview']);
-
 (function() {
 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -22,10 +21,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <style type="text/css" media="screen">
 body {margin:0px;padding:0px;font-family:Helvetica, Arial, Tahoma;font-size:12px;}
 #container {width:960px; margin:50px auto 0; position:relative;}
-#container a {position:absolute; top:0; left:0; color:white; font-size:1px;}
 #image {float: right}
 #text {padding-top:200px; margin-left:40px;}
-#text a {width:26px; height:30px; margin-top:312px;}
+#text a {width:26px; height:30px; margin-top:312px; position:absolute; top:0; left:0; color:white; font-size:1px;}
 #text #facebook {margin-left:40px;}
 #text #twitter {margin-left:70px;}
 #text #instagram {margin-left:103px;}
@@ -37,7 +35,8 @@ body {margin:0px;padding:0px;font-family:Helvetica, Arial, Tahoma;font-size:12px
 <body>
 <div id="container">
     <div id="image">
-        <script>document.write(images[index]);</script>
+        <script>//document.write(images[index]);</script>
+        <a href="https://www.facebook.com/media/set/?set=a.487775527981095.1073741827.252644311494219&type=3" target="_blank"><img src='images/002.jpg' alt=''></a>
     </div>
     <div id="text">
         <img src="images/text.png" />
